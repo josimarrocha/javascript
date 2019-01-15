@@ -6,7 +6,7 @@ let hrs = 0.20;
 let hora = 0;
 let cont = 0;
 function setDate(){
-    cont += 0.06;
+    cont += 0.0166666;
     const now = new Date();
 
     const seconds = now.getSeconds() * 6 + 90;
@@ -21,6 +21,6 @@ function setDate(){
     
     console.log(hour)
     $hourHand.style.transform = `rotate(${hour}deg)`
+    // $hourHand.style.transform = `rotate(450deg)`
 }
-hrs += hrs;
 setInterval(setDate, 1000);
